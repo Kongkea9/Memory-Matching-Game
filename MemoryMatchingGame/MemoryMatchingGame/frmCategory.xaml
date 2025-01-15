@@ -1,0 +1,536 @@
+﻿<Window x:Class="MemoryMatchingGame.frmCategory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryMatchingGame"
+        mc:Ignorable="d"  
+        Title="frmCategory" Height="1200" Width="900"
+        WindowState="Maximized"  
+        WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource=".\CoverImage\Background.png" Stretch="UniformToFill"/>
+    </Window.Background>
+
+    <Border Width="600"
+            Height="1000"   
+            Margin="10"
+             BorderThickness="0">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".15*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height=".2*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom">
+                <TextBlock Text="Memory matching games"
+                           FontSize="45"
+                           FontWeight="Bold"
+                           FontStyle="Italic"
+                           Foreground="#3A8BF2"
+                           Margin="0,40,0,0">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gray" 
+                            BlurRadius="2" 
+                            ShadowDepth="3" 
+                            Opacity="0.5" />
+                    </TextBlock.Effect>
+
+                </TextBlock>
+
+            </StackPanel>
+
+            <Grid Grid.Row="1"
+                  Height="650">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--People-->
+                <Button Name="btnPeople"
+                        Margin="15" 
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Click="btnPeople_Click">
+
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="0,0,13,0">
+                        <Image Source=".\ImageCategory\Person.png"
+                               Width="100"/>
+                        <TextBlock Text="People"
+                                   FontSize="30" Margin="10,0,0,0"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Fruit-->
+                <Button Grid.Column="1"
+                        Grid.Row="0"
+                        Name="btnFruit"
+                        Margin="15"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Click="btnFruit_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="0,0,13,0">
+                        <Image Source=".\ImageCategory\Fruit.png"
+                               Width="100"/>
+                        <TextBlock Text="Fruits"
+                                   FontSize="30" Margin="18,0,0,0"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Animal-->
+                <Button Grid.Column="3"
+                        Grid.Row="0"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Name="btnAnimal"
+                        Margin="15"
+                        Click="btnAnimal_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="0,0,13,0">
+                        <Image Source=".\ImageCategory\Animal.png"
+                               Width="100"/>
+                        <TextBlock Text="Animals"
+                                   FontSize="30"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Food-->
+                <Button Grid.Column="0"
+                        Grid.Row="1"
+                        Name="btnFood"
+                        Margin="15"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Click="btnFood_Click" >
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                        >
+                        <Image Source=".\ImageCategory\Food.png"
+                               Width="100"/>
+                        <TextBlock Text="Foods"
+                                   FontSize="30"/>
+                    </StackPanel>
+                </Button>
+
+                <!--clothing-->
+                <Button Grid.Column="1"
+                        Grid.Row="1"
+                        Name="btnClothing"
+                        Margin="15"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Click="btnClothing_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="0,0,13,0">
+                        <Image Source=".\ImageCategory\Clothing.png"
+                               Width="100"/>
+                        <TextBlock Text="Clothing"
+                                   FontSize="30"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Letter-->
+                <Button Grid.Column="3"
+                        Grid.Row="1"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Name="btnLetter"
+                        Margin="15"
+                        Click="btnLetter_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center" >
+                        <Image Source=".\ImageCategory\Letter.png"
+                               Width="100"/>
+                        <TextBlock Text="Letters"
+                                   FontSize="30"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Number-->
+                <Button Grid.Column="0"
+                        Grid.Row="2"
+                        Name="btnNumber"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Margin="15"
+                        Click="btnNumber_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="0,0,13,0">
+                        <Image Source=".\ImageCategory\Number.png"
+                               Width="100"/>
+                        <TextBlock Text="Numbers"
+                                   FontSize="30"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Hand Sign-->
+                <Button Grid.Column="1"
+                        Grid.Row="2"
+                        Name="btnHandSign"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Margin="15"
+                        Click="btnHandSign_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="0,0,13,0">
+                        <Image Source=".\ImageCategory\HandSign.png"
+                               Width="100"/>
+                        <TextBlock Text="Hand Signs"
+                                   FontSize="28"
+                                   Margin="10,0,0,0"/>
+                    </StackPanel>
+                </Button>
+
+                <!--Flag-->
+                <Button Grid.Column="3"
+                        Grid.Row="2"
+                        Background="#EDE6FC"
+                        BorderBrush="#FFFFFF"
+                        BorderThickness="3"
+                        Name="btnFlag"
+                        Margin="15"
+                        Click="btnFlag_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="Black" 
+                                          BlurRadius="10" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </Button.Effect>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border"
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                                  VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Change Background on Hover -->
+                                <Trigger Property="IsMouseOver" Value="True " >
+                                    <Setter TargetName="border" Property="Background" Value="#F7CAD2"/>
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                    <StackPanel Orientation="Vertical"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="17,0,13,0">
+                        <Image Source=".\ImageCategory\Flag.png"
+                               Width="100"/>
+                        <TextBlock Text="Flags"
+                                   FontSize="30"
+                                   Margin="10,0,0,0"/>
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+
+            <Button Grid.Row="2"
+                    Name="btnBack"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Width="120"
+                    Height="60"
+                    Background="#F2B9C3"
+                    BorderBrush="White"
+                    BorderThickness="3"
+                    VerticalAlignment="top"
+                    HorizontalAlignment="Left"
+                    Click="btnBack_Click"
+                    Margin="25,0,0,15">
+
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" 
+                                      BlurRadius="10" 
+                                      ShadowDepth="5" 
+                                      Opacity="0.5" />
+                </Button.Effect>
+
+                    <Image Source=".\ButtonIcon\Back.png"
+                           Height="40"
+                           Width="40"/>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="18">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Change Background on Hover -->
+                            <Trigger Property="IsMouseOver" Value="True " >
+                                <Setter TargetName="border" Property="Background" Value="#D99AA7"/>
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+        </Grid>
+
+    </Border>
+</Window>
+

@@ -1,0 +1,162 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\frmcategory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\frmcategory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\frm2playersresult.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\frm2playersresult.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\frmsize.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\frmsize.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\frmcategory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\frmcategory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\frmcover.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\frmcover.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\frmloading.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\frmloading.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|c:\\users\\user\\source\\termproject\\memorymatchinggame\\memorymatchinggame\\frmloading.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}|MemoryMatchingGame\\MemoryMatchingGame.csproj|solutionrelative:memorymatchinggame\\frmloading.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmCategory.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmCategory.xaml",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\frmCategory.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmCategory.xaml",
+              "RelativeToolTip": "MemoryMatchingGame\\frmCategory.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-15T03:14:51.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm2PlayersResult.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frm2PlayersResult.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\frm2PlayersResult.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frm2PlayersResult.xaml.cs",
+              "RelativeToolTip": "MemoryMatchingGame\\frm2PlayersResult.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwBkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T03:11:47.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmCategory.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmCategory.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\frmCategory.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmCategory.xaml.cs",
+              "RelativeToolTip": "MemoryMatchingGame\\frmCategory.xaml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAIBAwCMAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:25:38.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmCover.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmCover.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\frmCover.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmCover.xaml.cs",
+              "RelativeToolTip": "MemoryMatchingGame\\frmCover.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:24:34.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmSize.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmSize.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\frmSize.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmSize.xaml.cs",
+              "RelativeToolTip": "MemoryMatchingGame\\frmSize.xaml.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAYwDgAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:24:37.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmLoading.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmLoading.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\frmLoading.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmLoading.xaml.cs",
+              "RelativeToolTip": "MemoryMatchingGame\\frmLoading.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:24:16.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmLoading.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmLoading.xaml",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\frmLoading.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\frmLoading.xaml",
+              "RelativeToolTip": "MemoryMatchingGame\\frmLoading.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-15T02:24:12.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryMatchingGame\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\TermProject\\MemoryMatchingGame\\MemoryMatchingGame\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MemoryMatchingGame\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:15:54.259Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

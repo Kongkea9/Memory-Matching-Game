@@ -1,0 +1,38 @@
+﻿<Window x:Class="MemoryMatchingGame.frmLoading"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryMatchingGame"
+        mc:Ignorable="d"
+        Title="frmLoadingBar" Height="900" Width="700"
+        WindowState="Maximized"
+        WindowStyle="None">
+  
+     <Grid>
+         <Grid.Background>
+             <ImageBrush ImageSource="CoverImage/Log.jpeg" Stretch="Fill"/>
+          </Grid.Background>
+
+            <!-- Overlay Panel for Loading Bar -->
+          <StackPanel HorizontalAlignment="Center" 
+                      VerticalAlignment="Bottom" 
+                      Width="500"
+                      Margin="0,0,0,24">
+                <!-- Title -->
+                <TextBlock Text="Loading Game..." 
+                           FontSize="24" 
+                           FontWeight="Bold" 
+                           Foreground="White" 
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,15" />
+
+                <!-- Loading Bar -->
+                <ProgressBar x:Name="LoadingBar" Width="500" Height="30" 
+                         Minimum="0" Maximum="100" Value="0" Foreground="Blue" />
+
+          </StackPanel>
+     </Grid>
+  
+
+</Window>

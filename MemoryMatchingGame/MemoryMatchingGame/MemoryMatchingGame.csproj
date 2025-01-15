@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19A9B11E-8CC3-4A24-91FF-2F6C4CDB8444}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MemoryMatchingGame</RootNamespace>
+    <AssemblyName>MemoryMatchingGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="frm1PlayerResult.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frm2PlayersResult.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmCover.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmLoading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frm1PlayerResult.xaml.cs">
+      <DependentUpon>frm1PlayerResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frm2PlayersResult.xaml.cs">
+      <DependentUpon>frm2PlayersResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategory.xaml.cs">
+      <DependentUpon>frmCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmCover.xaml.cs">
+      <DependentUpon>frmCover.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.xaml.cs">
+      <DependentUpon>frmLoading.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmSize.xaml.cs">
+      <DependentUpon>frmSize.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ButtonIcon\Home.png" />
+    <Resource Include="ButtonIcon\Move.png" />
+    <Resource Include="ButtonIcon\Paush.png" />
+    <Resource Include="ButtonIcon\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ButtonIcon\Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageCategory\Animal.png" />
+    <Resource Include="ImageCategory\Clothing.png" />
+    <Resource Include="ImageCategory\Flag.png" />
+    <Resource Include="ImageCategory\Food.png" />
+    <Resource Include="ImageCategory\Fruit.png" />
+    <Resource Include="ImageCategory\HandSign.png" />
+    <Resource Include="ImageCategory\Letter.png" />
+    <Resource Include="ImageCategory\Number.png" />
+    <Resource Include="ImageCategory\Person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CoverImage\Log.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CoverImage\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CoverImage\CardCover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ButtonIcon\Back.png" />
+    <Resource Include="ButtonIcon\Time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CoverImage\Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResultIcon\Champion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResultIcon\Loser.png" />
+    <Resource Include="ResultIcon\Winner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Clothing\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Numbers\1.png" />
+    <Resource Include="Numbers\10.png" />
+    <Resource Include="Numbers\11.png" />
+    <Resource Include="Numbers\12.png" />
+    <Resource Include="Numbers\13.png" />
+    <Resource Include="Numbers\14.png" />
+    <Resource Include="Numbers\15.png" />
+    <Resource Include="Numbers\16.png" />
+    <Resource Include="Numbers\17.png" />
+    <Resource Include="Numbers\18.png" />
+    <Resource Include="Numbers\19.png" />
+    <Resource Include="Numbers\2.png" />
+    <Resource Include="Numbers\20.png" />
+    <Resource Include="Numbers\21.png" />
+    <Resource Include="Numbers\22.png" />
+    <Resource Include="Numbers\23.png" />
+    <Resource Include="Numbers\24.png" />
+    <Resource Include="Numbers\25.png" />
+    <Resource Include="Numbers\3.png" />
+    <Resource Include="Numbers\4.png" />
+    <Resource Include="Numbers\5.png" />
+    <Resource Include="Numbers\6.png" />
+    <Resource Include="Numbers\7.png" />
+    <Resource Include="Numbers\8.png" />
+    <Resource Include="Numbers\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HandSigns\1.png" />
+    <Resource Include="HandSigns\10.png" />
+    <Resource Include="HandSigns\11.png" />
+    <Resource Include="HandSigns\12.png" />
+    <Resource Include="HandSigns\13.png" />
+    <Resource Include="HandSigns\14.png" />
+    <Resource Include="HandSigns\15.png" />
+    <Resource Include="HandSigns\16.png" />
+    <Resource Include="HandSigns\17.png" />
+    <Resource Include="HandSigns\18.png" />
+    <Resource Include="HandSigns\19.png" />
+    <Resource Include="HandSigns\2.png" />
+    <Resource Include="HandSigns\20.png" />
+    <Resource Include="HandSigns\21.png" />
+    <Resource Include="HandSigns\22.png" />
+    <Resource Include="HandSigns\23.png" />
+    <Resource Include="HandSigns\24.png" />
+    <Resource Include="HandSigns\25.png" />
+    <Resource Include="HandSigns\3.png" />
+    <Resource Include="HandSigns\4.png" />
+    <Resource Include="HandSigns\5.png" />
+    <Resource Include="HandSigns\6.png" />
+    <Resource Include="HandSigns\7.png" />
+    <Resource Include="HandSigns\8.png" />
+    <Resource Include="HandSigns\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Letters\1.png" />
+    <Resource Include="Letters\10.png" />
+    <Resource Include="Letters\11.png" />
+    <Resource Include="Letters\12.png" />
+    <Resource Include="Letters\13.png" />
+    <Resource Include="Letters\14.png" />
+    <Resource Include="Letters\15.png" />
+    <Resource Include="Letters\16.png" />
+    <Resource Include="Letters\17.png" />
+    <Resource Include="Letters\18.png" />
+    <Resource Include="Letters\19.png" />
+    <Resource Include="Letters\2.png" />
+    <Resource Include="Letters\20.png" />
+    <Resource Include="Letters\21.png" />
+    <Resource Include="Letters\22.png" />
+    <Resource Include="Letters\23.png" />
+    <Resource Include="Letters\24.png" />
+    <Resource Include="Letters\25.png" />
+    <Resource Include="Letters\3.png" />
+    <Resource Include="Letters\4.png" />
+    <Resource Include="Letters\5.png" />
+    <Resource Include="Letters\6.png" />
+    <Resource Include="Letters\7.png" />
+    <Resource Include="Letters\8.png" />
+    <Resource Include="Letters\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Foods\1.png" />
+    <Resource Include="Foods\10.png" />
+    <Resource Include="Foods\11.png" />
+    <Resource Include="Foods\12.png" />
+    <Resource Include="Foods\13.png" />
+    <Resource Include="Foods\14.png" />
+    <Resource Include="Foods\15.png" />
+    <Resource Include="Foods\16.png" />
+    <Resource Include="Foods\17.png" />
+    <Resource Include="Foods\18.png" />
+    <Resource Include="Foods\19.png" />
+    <Resource Include="Foods\2.png" />
+    <Resource Include="Foods\20.png" />
+    <Resource Include="Foods\21.png" />
+    <Resource Include="Foods\22.png" />
+    <Resource Include="Foods\23.png" />
+    <Resource Include="Foods\24.png" />
+    <Resource Include="Foods\25.png" />
+    <Resource Include="Foods\3.png" />
+    <Resource Include="Foods\4.png" />
+    <Resource Include="Foods\5.png" />
+    <Resource Include="Foods\6.png" />
+    <Resource Include="Foods\7.png" />
+    <Resource Include="Foods\8.png" />
+    <Resource Include="Foods\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fruits\1.png" />
+    <Resource Include="Fruits\10.png" />
+    <Resource Include="Fruits\11.png" />
+    <Resource Include="Fruits\12.png" />
+    <Resource Include="Fruits\13.png" />
+    <Resource Include="Fruits\14.png" />
+    <Resource Include="Fruits\15.png" />
+    <Resource Include="Fruits\16.png" />
+    <Resource Include="Fruits\17.png" />
+    <Resource Include="Fruits\18.png" />
+    <Resource Include="Fruits\19.png" />
+    <Resource Include="Fruits\2.png" />
+    <Resource Include="Fruits\20.png" />
+    <Resource Include="Fruits\21.png" />
+    <Resource Include="Fruits\22.png" />
+    <Resource Include="Fruits\23.png" />
+    <Resource Include="Fruits\24.png" />
+    <Resource Include="Fruits\25.png" />
+    <Resource Include="Fruits\3.png" />
+    <Resource Include="Fruits\4.png" />
+    <Resource Include="Fruits\5.png" />
+    <Resource Include="Fruits\6.png" />
+    <Resource Include="Fruits\7.png" />
+    <Resource Include="Fruits\8.png" />
+    <Resource Include="Fruits\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Clothing\10.png" />
+    <Resource Include="Clothing\12.png" />
+    <Resource Include="Clothing\13.png" />
+    <Resource Include="Clothing\15.png" />
+    <Resource Include="Clothing\16.png" />
+    <Resource Include="Clothing\17.png" />
+    <Resource Include="Clothing\18.png" />
+    <Resource Include="Clothing\19.png" />
+    <Resource Include="Clothing\2.png" />
+    <Resource Include="Clothing\20.png" />
+    <Resource Include="Clothing\21.png" />
+    <Resource Include="Clothing\22.png" />
+    <Resource Include="Clothing\23.png" />
+    <Resource Include="Clothing\24.png" />
+    <Resource Include="Clothing\25.png" />
+    <Resource Include="Clothing\3.png" />
+    <Resource Include="Clothing\4.png" />
+    <Resource Include="Clothing\5.png" />
+    <Resource Include="Clothing\6.png" />
+    <Resource Include="Clothing\8.png" />
+    <Resource Include="Clothing\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flags\1.png" />
+    <Resource Include="Flags\10.png" />
+    <Resource Include="Flags\11.png" />
+    <Resource Include="Flags\12.png" />
+    <Resource Include="Flags\13.png" />
+    <Resource Include="Flags\14.png" />
+    <Resource Include="Flags\15.png" />
+    <Resource Include="Flags\16.png" />
+    <Resource Include="Flags\17.png" />
+    <Resource Include="Flags\18.png" />
+    <Resource Include="Flags\19.png" />
+    <Resource Include="Flags\2.png" />
+    <Resource Include="Flags\20.png" />
+    <Resource Include="Flags\21.png" />
+    <Resource Include="Flags\22.png" />
+    <Resource Include="Flags\23.png" />
+    <Resource Include="Flags\24.png" />
+    <Resource Include="Flags\25.png" />
+    <Resource Include="Flags\3.png" />
+    <Resource Include="Flags\4.png" />
+    <Resource Include="Flags\5.png" />
+    <Resource Include="Flags\6.png" />
+    <Resource Include="Flags\7.png" />
+    <Resource Include="Flags\8.png" />
+    <Resource Include="Flags\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Animals\1.png" />
+    <Resource Include="Animals\10.png" />
+    <Resource Include="Animals\11.png" />
+    <Resource Include="Animals\12.png" />
+    <Resource Include="Animals\13.png" />
+    <Resource Include="Animals\14.png" />
+    <Resource Include="Animals\15.png" />
+    <Resource Include="Animals\16.png" />
+    <Resource Include="Animals\17.png" />
+    <Resource Include="Animals\18.png" />
+    <Resource Include="Animals\19.png" />
+    <Resource Include="Animals\2.png" />
+    <Resource Include="Animals\20.png" />
+    <Resource Include="Animals\21.png" />
+    <Resource Include="Animals\22.png" />
+    <Resource Include="Animals\23.png" />
+    <Resource Include="Animals\24.png" />
+    <Resource Include="Animals\25.png" />
+    <Resource Include="Animals\3.png" />
+    <Resource Include="Animals\4.png" />
+    <Resource Include="Animals\5.png" />
+    <Resource Include="Animals\6.png" />
+    <Resource Include="Animals\7.png" />
+    <Resource Include="Animals\8.png" />
+    <Resource Include="Animals\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="People\1.png" />
+    <Resource Include="People\10.png" />
+    <Resource Include="People\11.png" />
+    <Resource Include="People\12.png" />
+    <Resource Include="People\13.png" />
+    <Resource Include="People\14.png" />
+    <Resource Include="People\15.png" />
+    <Resource Include="People\16.png" />
+    <Resource Include="People\17.png" />
+    <Resource Include="People\18.png" />
+    <Resource Include="People\19.png" />
+    <Resource Include="People\2.png" />
+    <Resource Include="People\20.png" />
+    <Resource Include="People\21.png" />
+    <Resource Include="People\22.png" />
+    <Resource Include="People\23.png" />
+    <Resource Include="People\24.png" />
+    <Resource Include="People\25.png" />
+    <Resource Include="People\3.png" />
+    <Resource Include="People\4.png" />
+    <Resource Include="People\5.png" />
+    <Resource Include="People\6.png" />
+    <Resource Include="People\7.png" />
+    <Resource Include="People\8.png" />
+    <Resource Include="People\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Clothing\1.png" />
+    <Resource Include="Clothing\11.png" />
+    <Resource Include="Clothing\14.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

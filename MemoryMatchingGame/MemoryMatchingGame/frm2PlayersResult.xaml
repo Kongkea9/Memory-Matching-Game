@@ -1,0 +1,467 @@
+﻿<Window x:Class="MemoryMatchingGame.frm2PlayersResult"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryMatchingGame"
+        mc:Ignorable="d"
+        Title="frm2PlayersResult" Height="900" Width="800"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource=".\CoverImage\Background.png" Stretch="UniformToFill"/>
+    </Window.Background>
+
+    <Grid Height="700">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                BorderBrush="White"
+                Background="#4789DA"
+                BorderThickness="3"
+                CornerRadius="10"
+                Height="550"
+                Width="400">
+            <Border.Effect>
+                <DropShadowEffect Color="Black" 
+                                  BlurRadius="10" 
+                                  ShadowDepth="5" 
+                                  Opacity="0.5" />
+            </Border.Effect>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+
+
+                <TextBlock Grid.Row="0"
+                           Name="tbWinner"
+                           FontSize="45"
+                           FontWeight="Bold"
+                           Foreground="WhiteSmoke"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center">
+
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Gray" 
+                                          BlurRadius="3" 
+                                          ShadowDepth="5" 
+                                          Opacity="0.5" />
+                    </TextBlock.Effect>
+
+                </TextBlock>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source=".\ResultIcon\Winner.png"
+                           Name="BlueIcon"
+                           Height="80"
+                           VerticalAlignment="Bottom"/>
+                    <Image Grid.Column="1"
+                           Source=".\ResultIcon\Loser.png"
+                           Name="RedIcon"
+                           Height="80"
+                           VerticalAlignment="Bottom"/>
+
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            BorderBrush="White"
+                            Background="#1272EB"
+                            BorderThickness="2"
+                            CornerRadius="15"  
+                            Height="220"
+                            Width="170">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" 
+                                              BlurRadius="10" 
+                                              ShadowDepth="5" 
+                                              Opacity="0.5" />
+                        </Border.Effect>
+
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.4*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                        
+                        
+                            <Border Grid.Row="0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    BorderBrush="White"
+                                    Background="#085AC1"
+                                    BorderThickness="2"
+                                    CornerRadius="15"  
+                                    Height="55"
+                                    Width="170">
+                                <TextBlock Text="Blue"
+                                           Foreground="WhiteSmoke"
+                                           FontSize="40"
+                                           FontStyle="Italic"
+                                           Margin="0,0,0,2"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect Color="Gray" 
+                                                          BlurRadius="2" 
+                                                          ShadowDepth="3" 
+                                                          Opacity="0.5" />
+                                    </TextBlock.Effect>
+
+                                </TextBlock>
+                            </Border>
+                            <TextBlock Grid.Row="1"
+                                       Text="0"
+                                       Name="tbBlueScore"
+                                       FontSize="50"
+                                       Foreground="WhiteSmoke"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Margin="0,0,0,13">
+                                <TextBlock.Effect>
+                                    <DropShadowEffect Color="Gray" 
+                                                      BlurRadius="2" 
+                                                      ShadowDepth="3" 
+                                                      Opacity="0.5" />
+                                </TextBlock.Effect>
+
+
+                            </TextBlock>
+                          
+                        </Grid>
+                    </Border>
+                    <Border Grid.Column="1"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Background="#F04042"
+                            BorderBrush="White"
+                            BorderThickness="2"
+                            CornerRadius="15"  
+                            Height="220"
+                            Width="170">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" 
+                                              BlurRadius="10" 
+                                              ShadowDepth="5" 
+                                              Opacity="0.5" />
+                        </Border.Effect>
+
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.4*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+
+                            <Border Grid.Row="0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    Background="#EB1E1F"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    CornerRadius="15"  
+                                    Height="55"
+                                    Width="170">
+                                <TextBlock Text="Red"
+                                           Foreground="WhiteSmoke"
+                                           FontSize="40"
+                                           FontStyle="Italic"
+                                           Margin="0,0,0,3"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect Color="Gray" 
+                                                          BlurRadius="2" 
+                                                          ShadowDepth="3" 
+                                                          Opacity="0.5" />
+                                    </TextBlock.Effect>
+
+                                </TextBlock>
+                            </Border>
+                            <TextBlock Grid.Row="1"
+                                       Text="0"
+                                       Name="tbRedScore"
+                                       FontSize="50"
+                                       Foreground="WhiteSmoke"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Margin="0,0,0,13">
+                                <TextBlock.Effect>
+                                    <DropShadowEffect Color="Gray" 
+                                                      BlurRadius="2" 
+                                                      ShadowDepth="3" 
+                                                      Opacity="0.5" />
+                                </TextBlock.Effect>
+
+
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+
+
+
+                </Grid>
+
+                <Grid Grid.Row="3"
+                      Margin="5,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.7*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0"
+                               Text="Move : "
+                               FontSize="30"
+                               Foreground="WhiteSmoke"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center">
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="Gray" 
+                            BlurRadius="3" 
+                            ShadowDepth="5" 
+                            Opacity="0.5" />
+                        </TextBlock.Effect>
+
+
+                    </TextBlock>
+                    <TextBlock Grid.Column="1"
+                               Text="0"
+                               Name="tbMove"
+                               FontSize="30"
+                               Foreground="WhiteSmoke"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Margin="0,6,0,0">
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="Gray" 
+                            BlurRadius="3" 
+                            ShadowDepth="5" 
+                            Opacity="0.5" />
+                        </TextBlock.Effect>
+
+
+                    </TextBlock>
+                    <TextBlock Grid.Column="2"
+                               Text="Time : "
+                               FontSize="30"
+                               Foreground="WhiteSmoke"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center">
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="Gray" 
+                            BlurRadius="3" 
+                            ShadowDepth="5" 
+                            Opacity="0.5" />
+                        </TextBlock.Effect>
+
+
+                    </TextBlock>
+                    <TextBlock Grid.Column="3"
+                               Text="00 : 00 "
+                               Name="tbTime"
+                               FontSize="30"
+                               Foreground="WhiteSmoke"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               Margin="0,6,0,0">
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="Gray" 
+                            BlurRadius="3" 
+                            ShadowDepth="5" 
+                            Opacity="0.5" />
+                        </TextBlock.Effect>
+
+
+                    </TextBlock>
+
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="2"
+              Margin="5"
+              Width="450">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button Grid.Column="0"
+                    Name="btnBack"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Width="100"
+                    Height="60"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Background="#F2B9C3"
+                    BorderBrush="White"
+                    BorderThickness="3"
+                    Click="btnBack_Click"
+                    >
+
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" 
+                             BlurRadius="10" 
+                             ShadowDepth="5" 
+                             Opacity="0.5" />
+                </Button.Effect>
+
+                <Image Source=".\ButtonIcon\Back.png"
+                           Name ="btnPaushIcon"
+                           Height="40"
+                           Width="40"/>
+
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="18">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Change Background on Hover -->
+                            <Trigger Property="IsMouseOver" Value="True " >
+                                <Setter TargetName="border" Property="Background" Value="#D99AA7"/>
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+            <Button Grid.Column="1"                  
+                    Name="btnReplay"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Width="110"
+                    Height="60"
+                    Background="#F7C503"
+                    BorderBrush="white"                    
+                    BorderThickness="3"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Click="btnReplay_Click">
+
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" 
+                                      BlurRadius="10" 
+                                      ShadowDepth="5" 
+                                      Opacity="0.5" />
+                </Button.Effect>
+
+                    <Image Source=".\ButtonIcon\Restart.png"
+                           Height="35"
+                           Width="40"/>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="18">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Change Background on Hover -->
+                            <Trigger Property="IsMouseOver" Value="True " >
+                                <Setter TargetName="border" Property="Background" Value="#D6A802"/>
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Grid.Column="3"
+                    Name="btnHome"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Width="120"
+                    Height="60"
+                    Background="#4EB1FA"
+                    BorderBrush="White"
+                    BorderThickness="3"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Click="btnHome_Click">
+
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" 
+                                      BlurRadius="10" 
+                                      ShadowDepth="5" 
+                                      Opacity="0.5" />
+                </Button.Effect>
+
+                <Image Source=".\ButtonIcon\Home.png"
+                           Height="40"
+                           Width="40"/>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="18">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Change Background on Hover -->
+                            <Trigger Property="IsMouseOver" Value="True " >
+                                <Setter TargetName="border" Property="Background" Value="#3A91C8"/>
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+
+
+
+
+        </Grid>
+
+
+
+
+
+    </Grid>
+</Window>
